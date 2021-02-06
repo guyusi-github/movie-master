@@ -104,5 +104,22 @@
             </exclusions>
         </dependency>
 <!--        引入数据库依赖-->
+        <!--线性矩阵相关库-->
+        <dependency>
+            <groupId>org.scalanlp</groupId>
+            <artifactId>jblas</artifactId>
+            <version>${jblas.version}</version>
+        </dependency>
+        <!-- kafka -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>0.10.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
     </dependencies>
 </project>
